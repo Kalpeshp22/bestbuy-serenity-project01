@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="2" name="com.bestbuyapi.productinfo.ProductCRUDTestWithSteps.ProductsCRUDTestWithSteps" skipped="0" tests="4" time="3.09" timestamp="2022-06-05T23:00:06.584+01:00[Europe/London]"><testcase classname="com.bestbuyapi.productinfo.ProductCRUDTestWithSteps$ProductsCRUDTestWithSteps" name="This will create a new Product"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;200&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;200&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+</system-err></testcase><testcase classname="com.bestbuyapi.productinfo.ProductCRUDTestWithSteps$ProductsCRUDTestWithSteps" name="Verify that Product was added to the application"><error message="The parameter &quot;name&quot; was used but not defined. Define parameters using the JsonPath.params(...) function" type="java.lang.IllegalArgumentException">The parameter "name" was used but not defined. Define parameters using the JsonPath.params(...) function</error><system-err>The parameter "name" was used but not defined. Define parameters using the JsonPath.params(...) function&#13;
+io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:50)&#13;
+io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)&#13;
+io.restassured.path.json.JsonPath.get(JsonPath.java:202)&#13;
+io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.path(RestAssuredResponseOptionsGroovyImpl.groovy:398)&#13;
+io.restassured.internal.RestAssuredResponseOptionsImpl.path(RestAssuredResponseOptionsImpl.java:200)&#13;
+com.bestbuyapi.bestbuyapiinfo.ProductsSteps.getProductInfoByName(ProductsSteps.java:35)&#13;
+</system-err></testcase><testcase classname="com.bestbuyapi.productinfo.ProductCRUDTestWithSteps$ProductsCRUDTestWithSteps" name="Update the Product information and verify the updated information"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;500&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+</system-err></testcase><testcase classname="com.bestbuyapi.productinfo.ProductCRUDTestWithSteps$ProductsCRUDTestWithSteps" name="Delete the Product and verify if the Product is deleted!"/></testsuite>
